@@ -1,0 +1,122 @@
+{
+  "version": "v0.4",
+  "project": {
+    "name": "Monotone-Light Factorization of Compact Hausdorff Surjections",
+    "description": "Every continuous surjection between compact Hausdorff spaces factors through a compact Hausdorff quotient that collapses exactly the connected components of each original fiber. The first map has connected fibers and the second has totally disconnected fibers. Any two such factorizations have a unique commuting homeomorphism. Empty spaces are permitted.",
+    "authors": [
+      "Arthur Freitas Ramos",
+      "David Barros Hulak",
+      "Ruy Jose Guerra Barretto de Queiroz"
+    ],
+    "responsible_maintainers": [
+      "Arthur Freitas Ramos",
+      "David Barros Hulak",
+      "Ruy Jose Guerra Barretto de Queiroz"
+    ],
+    "license": "Apache-2.0"
+  },
+  "repository": {
+    "role": "substantive-development"
+  },
+  "classification": {
+    "arxiv": [
+      "math.GN"
+    ],
+    "msc2020": [
+      "54C10",
+      "54D05",
+      "54D30",
+      "54F05"
+    ]
+  },
+  "sources": [
+    {
+      "title": "Decompositions of Manifolds",
+      "type": "book",
+      "id": "https://www.maths.ed.ac.uk/~v1ranick/papers/daverman.pdf#page=31",
+      "location": "Robert J. Daverman, section 4, Proposition 2 and Theorem 3, printed pages 18 and 19 (PDF pages 31 and 32)",
+      "relationship": "formalizes",
+      "note": "Formalizes the compact Hausdorff continuous-surjection case of the monotone-light factorization theorem, together with uniqueness as a commuting homeomorphism. The source proves the stronger closed Hausdorff-map case with compact fibers.",
+      "author_endorsement": "not-contacted",
+      "authors": [
+        "Robert J. Daverman"
+      ]
+    }
+  ],
+  "related_formalizations": [
+    {
+      "id": "https://github.com/leanprover-community/mathlib4/tree/065356127b1dc0016f66b7283ce0ce2c4055aa55",
+      "relationship": "builds-on",
+      "note": "Uses connected components, their clopen characterization in compact Hausdorff spaces, quotient topology, closed maps, connected preimages of closed connected sets, and the compact-to-Hausdorff homeomorphism criterion. Source scans located no equivalent full factorization; this is not a proof of absence."
+    }
+  ],
+  "status": {
+    "scope": "Existence with the exact fiber-component kernel and uniqueness up to exactly one commuting homeomorphism for compact Hausdorff spaces, including empty spaces.",
+    "sorry_count": 0,
+    "sorry_in_definitions": 0,
+    "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  "automation": {
+    "methods": [
+      {
+        "method": "agent",
+        "models": [
+          "OpenAI Codex (model identifier not recorded)"
+        ],
+        "framework": "Lean 4 and Mathlib",
+        "tool_setup": "One serial compiler under bounded Windows Job Object stages, fresh source compilation, isolated dependency-only Challenge, exact theorem types and universes, explicit predicate type and value, and transitive axiom audit."
+      },
+      {
+        "method": "agent",
+        "models": [
+          "OpenAI Codex (model identifier not recorded)"
+        ],
+        "framework": "Lean 4 and Mathlib",
+        "tool_setup": "Independent AI mathematical and primary-source review; serial strict compilation, isolated Challenge, exact theorem and predicate comparisons, universe and standard-axiom checks, empty-space existence and uniqueness checks, metadata, dependency byte provenance and public-package checks within one CPU and 3 GiB."
+      }
+    ],
+    "spend_usd": "not tracked",
+    "notes": "Human direction selected the mathematical target, scope and resource limits. Challenge has three intentional theorem holes; Solution has none. Independent AI review approved the original 16-file public snapshot. The approved proof and Challenge bytes are unchanged. Review-status prose and metadata were subsequently refreshed and revalidated locally. Publication belongs to the parent task."
+  },
+  "fidelity": {
+    "divergences": "Specializes the source theorem to continuous surjections between compact Hausdorff spaces. The relation is proved closed by separating two distinct components in a compact fiber with clopen pieces, extending to disjoint ambient open sets, and using closedness of the original map to control nearby fibers. Compact projection makes the quotient map closed, and normal separation gives a Hausdorff quotient. The light proof applies the existing closed-connected-preimage theorem to the closure of a preconnected subset. Uniqueness compares kernels and constructs a commuting homeomorphism. No metric, local connectedness or nonemptiness assumption is used."
+  },
+  "review": {
+    "status": "Independent AI review approved all three selected theorems, the actual exposed FiberRel definition, their supporting proof source and the reviewed 16-file public archive. It checked the primary mathematical source and independently repeated strict proof compilation, isolated Challenge compilation, exact theorem and predicate types and values, universes, standard axioms, empty-space existence and uniqueness, metadata, dependency byte provenance, duplicate candidates and package privacy. No mathematical or local Lean blocker was found. Approved Solution and Challenge bytes are unchanged. Review-status prose and metadata were subsequently refreshed and revalidated locally; new final archive integrity and privacy checks passed. The changed prose, metadata and final archive bytes are not claimed as a second independent review. An ordinary Lake build, CI execution, hosted Comparator, NanoDa and con-ron replay, fresh clean dependency rebuild, human mathematical review and registry review remain unrun.",
+    "approved_proof_sha256": {
+      "Solution.lean": "7b83e63f3dc8216608c37095e86fcc4d6fb6bb9fafdd0b46db8846fde818f321",
+      "Challenge.lean": "11e6b5894cf15756852b06585972f00cfe4e9d3fdcc9f14da058bcd561693c78"
+    },
+    "reviewed_metadata_sha256": "82ac43b9999241655a5d83be3ffbb04181f486d1c73551cad4b9b8b00c6309ac",
+    "reviewed_public_archive_sha256": "eee747fbf31afe98ed2053e3bafe0be62dd9464431297b093d65f03320132bea",
+    "independent_review_utc": "2026-10-06T03:22:45.153598+00:00"
+  },
+  "alignment": {
+    "namespace": "MonotoneLight",
+    "statements": [
+      {
+        "source": "Proposition 2, compact Hausdorff fiber-component separation",
+        "lean": "MonotoneLight.isClosed_fiberRel",
+        "module": "Solution",
+        "status": "proved"
+      },
+      {
+        "source": "Theorem 3, compact Hausdorff existence",
+        "lean": "MonotoneLight.exists_monotone_light_factorization",
+        "module": "Solution",
+        "status": "proved"
+      },
+      {
+        "source": "Theorem 3, uniqueness of the decomposition and commuting quotient",
+        "lean": "MonotoneLight.unique_monotone_light_factorization",
+        "module": "Solution",
+        "status": "proved"
+      }
+    ]
+  },
+  "acknowledgements": "Credits Robert J. Daverman, Lean and Mathlib contributors. No mathematical novelty, author endorsement, registry acceptance or completed human mathematical review is claimed."
+}

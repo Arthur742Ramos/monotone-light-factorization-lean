@@ -1,0 +1,16 @@
+{
+  "challenge_module": "Challenge",
+  "solution_module": "Solution",
+  "theorem_names": [
+    "MonotoneLight.isClosed_fiberRel",
+    "MonotoneLight.exists_monotone_light_factorization",
+    "MonotoneLight.unique_monotone_light_factorization"
+  ],
+  "definition_names": [],
+  "permitted_axioms": [
+    "propext",
+    "Quot.sound",
+    "Classical.choice"
+  ],
+  "enable_nanoda": true
+}

@@ -1,0 +1,11 @@
+.lake/
+.toolchain/
+evidence/
+dist/
+__pycache__/
+*.olean
+*.ilean
+*.ir
+*.private
+verification.json
+formalization-validation.json
