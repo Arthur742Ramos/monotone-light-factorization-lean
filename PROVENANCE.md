@@ -13,3 +13,6 @@ Source scans at the pinned Mathlib revision found no equivalent full factorizati
 Earlier permitted caches supplied Mathlib source and complete module artifact families. No earlier topology project is a proof dependency. Resource-control, verification and packaging scripts were adapted from the prior standalone pipeline under Apache 2.0. Byte provenance of cached artifacts does not establish a rebuild from the corresponding source.
 
 Copyright attribution is Arthur Freitas Ramos, David Barros Hulak and Ruy Jose Guerra Barretto de Queiroz. The metadata records automation, the source, mathematical scope and review limits. No public repository mutation or registry submission was performed by this task.
+
+
+The pinned definition dossier copies complete Mathlib and Lean source files under their upstream Apache 2.0 licenses. It preserves original copyright and author headers and includes both upstream license texts. `definition-evidence/manifest.json` gives exact repository paths, commits, Git blobs and SHA256 hashes, freshly compared with the public upstream trees. These files are audit evidence and are excluded from the Lean import graph. [DEFINITIONS.md](DEFINITIONS.md) records the statement inventory and literal interpretation.

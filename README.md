@@ -14,4 +14,11 @@ python3 scripts/verify.py --lake-build
 
 The verifier compiles the proof from source, compiles a renamed Challenge against dependencies alone, compares all selected theorem types and universe parameters, checks the explicit `FiberRel` definition, and audits transitive axioms. `Solution.lean` has no admissions or new axioms. The Challenge contains three intentional statement holes for comparison.
 
-Independent AI review approved the three selected theorems, the fiber-component quotient and the reviewed 16-file public package. The approved proof and Challenge bytes are unchanged. The final review-status prose and metadata were revalidated locally. Local verification uses copied pinned dependency artifacts; a clean dependency rebuild, normal Lake build, CI execution, hosted Comparator, independent kernel replay and human mathematical review remain unrun. See [VERIFICATION.md](VERIFICATION.md) and [REVIEW.md](REVIEW.md).
+Independent AI review approved the three selected theorems, the fiber-component quotient and the original 16-file public package. The approved proof and Challenge bytes remain unchanged. Parent-reported hosted mechanical verification passed for submitted commit `7f1c963eb21d2138cc5a52fff634d78ef328032e`; definition-fidelity review requested inspectable imported predicate sources.
+
+[DEFINITIONS.md](DEFINITIONS.md) explains each material statement predicate and links the complete pinned sources in [definition-evidence](definition-evidence/README.md). The source evidence and literal Lean audit passed locally. The repaired package awaits independent review and hosted CI at its final commit. See [VERIFICATION.md](VERIFICATION.md) and [REVIEW.md](REVIEW.md).
+
+```sh
+python3 scripts/check_definitions.py --self-test --compare-mathlib
+lake env lean -j1 -M3072 -DwarningAsError=true scripts/DefinitionAudit.lean
+```

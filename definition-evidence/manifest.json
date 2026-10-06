@@ -1,0 +1,804 @@
+{
+  "format": 1,
+  "mathlib_commit": "065356127b1dc0016f66b7283ce0ce2c4055aa55",
+  "lean_commit": "11acb17ec6b07a8f9e9173e6845197929540936b",
+  "lean_toolchain": "leanprover/lean4:v4.35.0-rc2",
+  "submitted_commit": "7f1c963eb21d2138cc5a52fff634d78ef328032e",
+  "frozen_sources": {
+    "Challenge.lean": "11e6b5894cf15756852b06585972f00cfe4e9d3fdcc9f14da058bcd561693c78",
+    "Solution.lean": "7b83e63f3dc8216608c37095e86fcc4d6fb6bb9fafdd0b46db8846fde818f321"
+  },
+  "sources": [
+    {
+      "file": "definition-evidence/mathlib/Mathlib/Topology/Connected/Basic.lean.txt",
+      "upstream_path": "Mathlib/Topology/Connected/Basic.lean",
+      "repository": "leanprover-community/mathlib4",
+      "commit": "065356127b1dc0016f66b7283ce0ce2c4055aa55",
+      "git_blob": "e5b3c3843117d81cef308b55f9cf24fc6bc6def4",
+      "sha256": "a1971f3ede509ec753e766747362fa33040b1bbb24d75fbf52f57584368c3c1c",
+      "bytes": 43158,
+      "source_url": "https://github.com/leanprover-community/mathlib4/blob/065356127b1dc0016f66b7283ce0ce2c4055aa55/Mathlib/Topology/Connected/Basic.lean",
+      "license": "Apache-2.0"
+    },
+    {
+      "file": "definition-evidence/mathlib/Mathlib/Topology/Connected/TotallyDisconnected.lean.txt",
+      "upstream_path": "Mathlib/Topology/Connected/TotallyDisconnected.lean",
+      "repository": "leanprover-community/mathlib4",
+      "commit": "065356127b1dc0016f66b7283ce0ce2c4055aa55",
+      "git_blob": "8fa3ab59abb2ee9b26fd5b98c8c52e3307a1d923",
+      "sha256": "7eac4d645d77e3f6efb72d3c1cebcedc986e5878d6f4fc7c4c96717f67ae1d6c",
+      "bytes": 18354,
+      "source_url": "https://github.com/leanprover-community/mathlib4/blob/065356127b1dc0016f66b7283ce0ce2c4055aa55/Mathlib/Topology/Connected/TotallyDisconnected.lean",
+      "license": "Apache-2.0"
+    },
+    {
+      "file": "definition-evidence/mathlib/Mathlib/Topology/Defs/Basic.lean.txt",
+      "upstream_path": "Mathlib/Topology/Defs/Basic.lean",
+      "repository": "leanprover-community/mathlib4",
+      "commit": "065356127b1dc0016f66b7283ce0ce2c4055aa55",
+      "git_blob": "326105821a5a8ce5041ccf8dce22779bd55fa923",
+      "sha256": "6a16294b9ce69e6f245f45abc59d45db011f2a1c545b4d5d403ccaca5b17c99c",
+      "bytes": 10047,
+      "source_url": "https://github.com/leanprover-community/mathlib4/blob/065356127b1dc0016f66b7283ce0ce2c4055aa55/Mathlib/Topology/Defs/Basic.lean",
+      "license": "Apache-2.0"
+    },
+    {
+      "file": "definition-evidence/mathlib/Mathlib/Topology/Defs/Induced.lean.txt",
+      "upstream_path": "Mathlib/Topology/Defs/Induced.lean",
+      "repository": "leanprover-community/mathlib4",
+      "commit": "065356127b1dc0016f66b7283ce0ce2c4055aa55",
+      "git_blob": "7526293e644df38a5a2564f8c52a2bd7f561fc82",
+      "sha256": "ba804ff6a2bd28aea83da56dfc339e565745a088d7aeac977643410f1dae8f74",
+      "bytes": 6704,
+      "source_url": "https://github.com/leanprover-community/mathlib4/blob/065356127b1dc0016f66b7283ce0ce2c4055aa55/Mathlib/Topology/Defs/Induced.lean",
+      "license": "Apache-2.0"
+    },
+    {
+      "file": "definition-evidence/mathlib/Mathlib/Topology/Defs/Filter.lean.txt",
+      "upstream_path": "Mathlib/Topology/Defs/Filter.lean",
+      "repository": "leanprover-community/mathlib4",
+      "commit": "065356127b1dc0016f66b7283ce0ce2c4055aa55",
+      "git_blob": "343fd3e5f576a8e0f0f040eb2df8e5c309106655",
+      "sha256": "3b2ffc8154a531b4f0d3b36aa75ee08635c0df31884ba83baf1b0b0283c13748",
+      "bytes": 15801,
+      "source_url": "https://github.com/leanprover-community/mathlib4/blob/065356127b1dc0016f66b7283ce0ce2c4055aa55/Mathlib/Topology/Defs/Filter.lean",
+      "license": "Apache-2.0"
+    },
+    {
+      "file": "definition-evidence/mathlib/Mathlib/Topology/Separation/Hausdorff.lean.txt",
+      "upstream_path": "Mathlib/Topology/Separation/Hausdorff.lean",
+      "repository": "leanprover-community/mathlib4",
+      "commit": "065356127b1dc0016f66b7283ce0ce2c4055aa55",
+      "git_blob": "c7c9a4de3b9c0ea0eef31a6f5b98170c89b7f98d",
+      "sha256": "95c58f7ad7ef3ea627d5af8d2427c7d7e08a47207ed084e51945217f32566f06",
+      "bytes": 36099,
+      "source_url": "https://github.com/leanprover-community/mathlib4/blob/065356127b1dc0016f66b7283ce0ce2c4055aa55/Mathlib/Topology/Separation/Hausdorff.lean",
+      "license": "Apache-2.0"
+    },
+    {
+      "file": "definition-evidence/mathlib/Mathlib/Topology/Homeomorph/Defs.lean.txt",
+      "upstream_path": "Mathlib/Topology/Homeomorph/Defs.lean",
+      "repository": "leanprover-community/mathlib4",
+      "commit": "065356127b1dc0016f66b7283ce0ce2c4055aa55",
+      "git_blob": "7c7e9c3c815eb873ab5e637aaac83e4cdf80f39d",
+      "sha256": "4d27914014d20e4b9a6af97ebd7e7bea7451cc37a96dbd102b6d21c9a3f0eb72",
+      "bytes": 24041,
+      "source_url": "https://github.com/leanprover-community/mathlib4/blob/065356127b1dc0016f66b7283ce0ce2c4055aa55/Mathlib/Topology/Homeomorph/Defs.lean",
+      "license": "Apache-2.0"
+    },
+    {
+      "file": "definition-evidence/mathlib/Mathlib/Topology/Constructions.lean.txt",
+      "upstream_path": "Mathlib/Topology/Constructions.lean",
+      "repository": "leanprover-community/mathlib4",
+      "commit": "065356127b1dc0016f66b7283ce0ce2c4055aa55",
+      "git_blob": "91a7136cc7b39e609f8becbf9e0785069bb2610d",
+      "sha256": "47de73fc60746ec4c31fa6e3fcb6d7fe8fbbcf5dbc88c0471fc017040a26467f",
+      "bytes": 63656,
+      "source_url": "https://github.com/leanprover-community/mathlib4/blob/065356127b1dc0016f66b7283ce0ce2c4055aa55/Mathlib/Topology/Constructions.lean",
+      "license": "Apache-2.0"
+    },
+    {
+      "file": "definition-evidence/mathlib/Mathlib/Topology/Compactness/Compact.lean.txt",
+      "upstream_path": "Mathlib/Topology/Compactness/Compact.lean",
+      "repository": "leanprover-community/mathlib4",
+      "commit": "065356127b1dc0016f66b7283ce0ce2c4055aa55",
+      "git_blob": "30fc9322f4ce78f847a592b0035bf5edfc65f33c",
+      "sha256": "3fc7ffe7db4db0a2de07d6fdf0e65da486b3dced1f3bac4d58ab869a92f4ac64",
+      "bytes": 65757,
+      "source_url": "https://github.com/leanprover-community/mathlib4/blob/065356127b1dc0016f66b7283ce0ce2c4055aa55/Mathlib/Topology/Compactness/Compact.lean",
+      "license": "Apache-2.0"
+    },
+    {
+      "file": "definition-evidence/mathlib/Mathlib/Order/Filter/Defs.lean.txt",
+      "upstream_path": "Mathlib/Order/Filter/Defs.lean",
+      "repository": "leanprover-community/mathlib4",
+      "commit": "065356127b1dc0016f66b7283ce0ce2c4055aa55",
+      "git_blob": "760285d16af8795fa73313254a28aa651c9d0883",
+      "sha256": "d0b1e4022a3910b2768e8786a3a66d701db0cb4c59c055b3bd17ec4cd28a60e5",
+      "bytes": 25198,
+      "source_url": "https://github.com/leanprover-community/mathlib4/blob/065356127b1dc0016f66b7283ce0ce2c4055aa55/Mathlib/Order/Filter/Defs.lean",
+      "license": "Apache-2.0"
+    },
+    {
+      "file": "definition-evidence/mathlib/Mathlib/Data/Set/Defs.lean.txt",
+      "upstream_path": "Mathlib/Data/Set/Defs.lean",
+      "repository": "leanprover-community/mathlib4",
+      "commit": "065356127b1dc0016f66b7283ce0ce2c4055aa55",
+      "git_blob": "866ef6ab673f737a4ffbb7b2138402d5c76e6c05",
+      "sha256": "4b5433ba90d229d2875756f2c486de41e2e1b5be89b7255be5fe7ed2e0c524c7",
+      "bytes": 11383,
+      "source_url": "https://github.com/leanprover-community/mathlib4/blob/065356127b1dc0016f66b7283ce0ce2c4055aa55/Mathlib/Data/Set/Defs.lean",
+      "license": "Apache-2.0"
+    },
+    {
+      "file": "definition-evidence/mathlib/Mathlib/Data/Set/Operations.lean.txt",
+      "upstream_path": "Mathlib/Data/Set/Operations.lean",
+      "repository": "leanprover-community/mathlib4",
+      "commit": "065356127b1dc0016f66b7283ce0ce2c4055aa55",
+      "git_blob": "f5d18fca655f6bf3079f859060f3738b5f2bc089",
+      "sha256": "60e5fa9adbd7d068a553d5a28875f5250e0a20771b5179f9f552882d0865c68e",
+      "bytes": 14767,
+      "source_url": "https://github.com/leanprover-community/mathlib4/blob/065356127b1dc0016f66b7283ce0ce2c4055aa55/Mathlib/Data/Set/Operations.lean",
+      "license": "Apache-2.0"
+    },
+    {
+      "file": "definition-evidence/mathlib/Mathlib/Data/Set/Subsingleton.lean.txt",
+      "upstream_path": "Mathlib/Data/Set/Subsingleton.lean",
+      "repository": "leanprover-community/mathlib4",
+      "commit": "065356127b1dc0016f66b7283ce0ce2c4055aa55",
+      "git_blob": "f35011a0c4f569fa3a97226587634cf991ee4fcb",
+      "sha256": "52d78212d59f05a6edc278ccf1a4543a91d3101bfd3f501f776253de281f3e56",
+      "bytes": 13990,
+      "source_url": "https://github.com/leanprover-community/mathlib4/blob/065356127b1dc0016f66b7283ce0ce2c4055aa55/Mathlib/Data/Set/Subsingleton.lean",
+      "license": "Apache-2.0"
+    },
+    {
+      "file": "definition-evidence/mathlib/Mathlib/Data/Set/Disjoint.lean.txt",
+      "upstream_path": "Mathlib/Data/Set/Disjoint.lean",
+      "repository": "leanprover-community/mathlib4",
+      "commit": "065356127b1dc0016f66b7283ce0ce2c4055aa55",
+      "git_blob": "e454989683e886f35bb9d6ef45c429eaadbd0f2d",
+      "sha256": "21e4643bfcae089dbbca262cb9d4b4bad1ad1cd77adf31ae43f4d2f2ab69e492",
+      "bytes": 3875,
+      "source_url": "https://github.com/leanprover-community/mathlib4/blob/065356127b1dc0016f66b7283ce0ce2c4055aa55/Mathlib/Data/Set/Disjoint.lean",
+      "license": "Apache-2.0"
+    },
+    {
+      "file": "definition-evidence/mathlib/Mathlib/Order/Disjoint.lean.txt",
+      "upstream_path": "Mathlib/Order/Disjoint.lean",
+      "repository": "leanprover-community/mathlib4",
+      "commit": "065356127b1dc0016f66b7283ce0ce2c4055aa55",
+      "git_blob": "7d5339050bb81a9d325ca7536bbe37dba409813f",
+      "sha256": "5c59598e126b8345a9373277f8e30c0d52b3fce1080a96281f1dc54bc6dd619c",
+      "bytes": 21759,
+      "source_url": "https://github.com/leanprover-community/mathlib4/blob/065356127b1dc0016f66b7283ce0ce2c4055aa55/Mathlib/Order/Disjoint.lean",
+      "license": "Apache-2.0"
+    },
+    {
+      "file": "definition-evidence/mathlib/Mathlib/Order/SetNotation.lean.txt",
+      "upstream_path": "Mathlib/Order/SetNotation.lean",
+      "repository": "leanprover-community/mathlib4",
+      "commit": "065356127b1dc0016f66b7283ce0ce2c4055aa55",
+      "git_blob": "7704edbb335989410bd491805f6bbad58a10a1a4",
+      "sha256": "302c614100cbc978e2af66d21d5eb0e09eb39402e9ae52a166e6faaa36d3dc14",
+      "bytes": 8299,
+      "source_url": "https://github.com/leanprover-community/mathlib4/blob/065356127b1dc0016f66b7283ce0ce2c4055aa55/Mathlib/Order/SetNotation.lean",
+      "license": "Apache-2.0"
+    },
+    {
+      "file": "definition-evidence/mathlib/Mathlib/Logic/Pairwise.lean.txt",
+      "upstream_path": "Mathlib/Logic/Pairwise.lean",
+      "repository": "leanprover-community/mathlib4",
+      "commit": "065356127b1dc0016f66b7283ce0ce2c4055aa55",
+      "git_blob": "7a2f0dc7819c5656049e1d99f6ba0be56f1e04ca",
+      "sha256": "ccac95d1101a308ae38946e81caaa6d2c32e7e90ed99f7305dba9f01a955e62f",
+      "bytes": 4665,
+      "source_url": "https://github.com/leanprover-community/mathlib4/blob/065356127b1dc0016f66b7283ce0ce2c4055aa55/Mathlib/Logic/Pairwise.lean",
+      "license": "Apache-2.0"
+    },
+    {
+      "file": "definition-evidence/mathlib/Mathlib/Logic/Equiv/Defs.lean.txt",
+      "upstream_path": "Mathlib/Logic/Equiv/Defs.lean",
+      "repository": "leanprover-community/mathlib4",
+      "commit": "065356127b1dc0016f66b7283ce0ce2c4055aa55",
+      "git_blob": "7821cb864d27388f46fd335a5f2fbc5d3be358ff",
+      "sha256": "c75fb2a102be49010eac04a1602160eaaa2c4c18d12b29bf6f5c45f622dad1e8",
+      "bytes": 42314,
+      "source_url": "https://github.com/leanprover-community/mathlib4/blob/065356127b1dc0016f66b7283ce0ce2c4055aa55/Mathlib/Logic/Equiv/Defs.lean",
+      "license": "Apache-2.0"
+    },
+    {
+      "file": "definition-evidence/mathlib/Mathlib/Basic/ExistsUnique.lean.txt",
+      "upstream_path": "Mathlib/Basic/ExistsUnique.lean",
+      "repository": "leanprover-community/mathlib4",
+      "commit": "065356127b1dc0016f66b7283ce0ce2c4055aa55",
+      "git_blob": "75053fb087909647a7f2dc1d7078e9bd574b9bff",
+      "sha256": "2f770285d2302f5733f27d8a12412a4067776d7f9a7ca7fada9998ed8a99391b",
+      "bytes": 7180,
+      "source_url": "https://github.com/leanprover-community/mathlib4/blob/065356127b1dc0016f66b7283ce0ce2c4055aa55/Mathlib/Basic/ExistsUnique.lean",
+      "license": "Apache-2.0"
+    },
+    {
+      "file": "definition-evidence/mathlib/LICENSE.txt",
+      "upstream_path": "LICENSE",
+      "repository": "leanprover-community/mathlib4",
+      "commit": "065356127b1dc0016f66b7283ce0ce2c4055aa55",
+      "git_blob": "8dada3edaf50dbc082c9a125058f25def75e625a",
+      "sha256": "b40930bbcf80744c86c46a12bc9da056641d722716c378f5659b9e555ef833e1",
+      "bytes": 11357,
+      "source_url": "https://github.com/leanprover-community/mathlib4/blob/065356127b1dc0016f66b7283ce0ce2c4055aa55/LICENSE",
+      "license": "Apache-2.0"
+    },
+    {
+      "file": "definition-evidence/lean/src/Init/Core.lean.txt",
+      "upstream_path": "src/Init/Core.lean",
+      "repository": "leanprover/lean4",
+      "commit": "11acb17ec6b07a8f9e9173e6845197929540936b",
+      "git_blob": "23e784c3806badcabd1e8f19c50946d66bc3c87a",
+      "sha256": "264a0b48fedc91fadf55fc5caac8d91003e3908a6e5e42736e2ac8bf1f7cdf99",
+      "bytes": 96402,
+      "source_url": "https://github.com/leanprover/lean4/blob/11acb17ec6b07a8f9e9173e6845197929540936b/src/Init/Core.lean",
+      "license": "Apache-2.0"
+    },
+    {
+      "file": "definition-evidence/lean/src/Init/Data/Function.lean.txt",
+      "upstream_path": "src/Init/Data/Function.lean",
+      "repository": "leanprover/lean4",
+      "commit": "11acb17ec6b07a8f9e9173e6845197929540936b",
+      "git_blob": "d3526ccde628989d0d4658dbec3c3f334bcb7a7f",
+      "sha256": "88217ed8ec91da1ec655c8a10f737b659a4570b4c05dbd6b084162a3157cf030",
+      "bytes": 5902,
+      "source_url": "https://github.com/leanprover/lean4/blob/11acb17ec6b07a8f9e9173e6845197929540936b/src/Init/Data/Function.lean",
+      "license": "Apache-2.0"
+    },
+    {
+      "file": "definition-evidence/lean/LICENSE.txt",
+      "upstream_path": "LICENSE",
+      "repository": "leanprover/lean4",
+      "commit": "11acb17ec6b07a8f9e9173e6845197929540936b",
+      "git_blob": "813da297567374691eaae7a88739dbbefd2afdfd",
+      "sha256": "8b28515ffffc5c0fe2807d8ae3735b00b324d9b7ce807dd63ff6ac8922fbce7e",
+      "bytes": 9160,
+      "source_url": "https://github.com/leanprover/lean4/blob/11acb17ec6b07a8f9e9173e6845197929540936b/LICENSE",
+      "license": "Apache-2.0"
+    }
+  ],
+  "material_statement_predicates": [
+    "MonotoneLight.FiberRel",
+    "IsClosed",
+    "CompactSpace",
+    "T2Space",
+    "Continuous",
+    "Function.Surjective",
+    "IsConnected",
+    "IsTotallyDisconnected",
+    "Homeomorph",
+    "ExistsUnique"
+  ],
+  "definitions": [
+    {
+      "name": "IsPreconnected",
+      "file": "definition-evidence/mathlib/Mathlib/Topology/Connected/Basic.lean.txt",
+      "start_line": 50,
+      "end_line": 52,
+      "excerpt_sha256": "ba102f5670064f8b84cccfa45d8940b53513c7f77b05d79b7d8b24372463fc16",
+      "depends_on": [
+        "IsOpen",
+        "Set.Nonempty",
+        "Set.Subset",
+        "Set.union",
+        "Set.inter"
+      ]
+    },
+    {
+      "name": "IsConnected",
+      "file": "definition-evidence/mathlib/Mathlib/Topology/Connected/Basic.lean.txt",
+      "start_line": 55,
+      "end_line": 56,
+      "excerpt_sha256": "fc9c06588555f8d5852cfc944a8ae1d08dfb70b0316cb14903795487dc0e8b75",
+      "depends_on": [
+        "Set.Nonempty",
+        "IsPreconnected"
+      ]
+    },
+    {
+      "name": "connectedComponent",
+      "file": "definition-evidence/mathlib/Mathlib/Topology/Connected/Basic.lean.txt",
+      "start_line": 495,
+      "end_line": 496,
+      "excerpt_sha256": "854e6a28b8f931ec0c3079caff65b3533c165e4f1d79bb7cb8f6700ecfbaf116",
+      "depends_on": [
+        "IsPreconnected",
+        "Set.sUnion"
+      ]
+    },
+    {
+      "name": "connectedComponentIn",
+      "file": "definition-evidence/mathlib/Mathlib/Topology/Connected/Basic.lean.txt",
+      "start_line": 505,
+      "end_line": 506,
+      "excerpt_sha256": "087a0317fbe7d2c3612eb4c5ee1b8b1b9ac969f1d596d9682797279b47c47986",
+      "depends_on": [
+        "connectedComponent",
+        "Set.image",
+        "subtype topology"
+      ]
+    },
+    {
+      "name": "TopologicalSpace",
+      "file": "definition-evidence/mathlib/Mathlib/Topology/Defs/Basic.lean.txt",
+      "start_line": 73,
+      "end_line": 83,
+      "excerpt_sha256": "403c1f5922772e69085cf330de934dfa3e59fbe9640779fca9d028130ff77925",
+      "depends_on": [
+        "Set.univ",
+        "Set.inter",
+        "Set.sUnion"
+      ]
+    },
+    {
+      "name": "IsOpen",
+      "file": "definition-evidence/mathlib/Mathlib/Topology/Defs/Basic.lean.txt",
+      "start_line": 95,
+      "end_line": 95,
+      "excerpt_sha256": "21a292d9f9af5a90f069fb433120cb6c36624fe960a9a69adc065edda0cec1a6",
+      "depends_on": [
+        "TopologicalSpace"
+      ]
+    },
+    {
+      "name": "IsClosed",
+      "file": "definition-evidence/mathlib/Mathlib/Topology/Defs/Basic.lean.txt",
+      "start_line": 107,
+      "end_line": 109,
+      "excerpt_sha256": "b781df1f94b7e9a0b16791daa67c0bad5d4446809fc5e63093140999f5ae536a",
+      "depends_on": [
+        "IsOpen",
+        "Set.compl"
+      ]
+    },
+    {
+      "name": "Continuous",
+      "file": "definition-evidence/mathlib/Mathlib/Topology/Defs/Basic.lean.txt",
+      "start_line": 155,
+      "end_line": 158,
+      "excerpt_sha256": "338d6eb23853e428f3e57edbac5bae462158689cbbd74439f8cfa4cdbfd08e6b",
+      "depends_on": [
+        "IsOpen",
+        "Set.preimage"
+      ]
+    },
+    {
+      "name": "IsTotallyDisconnected",
+      "file": "definition-evidence/mathlib/Mathlib/Topology/Connected/TotallyDisconnected.lean.txt",
+      "start_line": 36,
+      "end_line": 37,
+      "excerpt_sha256": "4d6d2a7f62e3a47df4008ab2da18351688dc4e1404221405d0b09eac9631f552",
+      "depends_on": [
+        "IsPreconnected",
+        "Set.Subsingleton",
+        "Set.Subset"
+      ]
+    },
+    {
+      "name": "CompactSpace",
+      "file": "definition-evidence/mathlib/Mathlib/Topology/Defs/Filter.lean.txt",
+      "start_line": 297,
+      "end_line": 299,
+      "excerpt_sha256": "123f4922db7621d85c1ecb0c67456e77685cd037a5bfa6c4b8150d019ffbeb0c",
+      "depends_on": [
+        "IsCompact",
+        "Set.univ"
+      ]
+    },
+    {
+      "name": "IsCompact",
+      "file": "definition-evidence/mathlib/Mathlib/Topology/Defs/Filter.lean.txt",
+      "start_line": 290,
+      "end_line": 291,
+      "excerpt_sha256": "549ab51ccc70c3e7cc861e46fc01843e8e8c15b2c201fc41ab370a546165fec6",
+      "depends_on": [
+        "Filter.NeBot",
+        "Filter.principal",
+        "ClusterPt",
+        "Filter.order"
+      ]
+    },
+    {
+      "name": "ClusterPt",
+      "file": "definition-evidence/mathlib/Mathlib/Topology/Defs/Filter.lean.txt",
+      "start_line": 275,
+      "end_line": 276,
+      "excerpt_sha256": "f90d95be3fde4dbf0316ba4196c035f85b5644f00fddb70c4f0826ea538d6ed7",
+      "depends_on": [
+        "Filter.NeBot",
+        "nhds",
+        "Filter.inf"
+      ]
+    },
+    {
+      "name": "nhds",
+      "file": "definition-evidence/mathlib/Mathlib/Topology/Defs/Filter.lean.txt",
+      "start_line": 130,
+      "end_line": 131,
+      "excerpt_sha256": "f628211a00b2bcd3fda531403166a4cd8eeefef78f744ae6e81c17e2e1108cc0",
+      "depends_on": [
+        "IsOpen",
+        "Filter.principal",
+        "Filter.sInf"
+      ]
+    },
+    {
+      "name": "isCompact_iff_finite_subcover",
+      "file": "definition-evidence/mathlib/Mathlib/Topology/Compactness/Compact.lean.txt",
+      "start_line": 386,
+      "end_line": 389,
+      "excerpt_sha256": "28290140941268bd26cfec1a6dccc3747589281a2bb1c65767d1e68c18608db3",
+      "depends_on": [
+        "IsCompact",
+        "IsOpen"
+      ]
+    },
+    {
+      "name": "T2Space",
+      "file": "definition-evidence/mathlib/Mathlib/Topology/Separation/Hausdorff.lean.txt",
+      "start_line": 85,
+      "end_line": 87,
+      "excerpt_sha256": "c816c860682dbc9e6d74d4bd7e59b7baad9d3aaeced487ed5ab8478fdd1740c5",
+      "depends_on": [
+        "Pairwise",
+        "IsOpen",
+        "Disjoint"
+      ]
+    },
+    {
+      "name": "Homeomorph",
+      "file": "definition-evidence/mathlib/Mathlib/Topology/Homeomorph/Defs.lean.txt",
+      "start_line": 43,
+      "end_line": 50,
+      "excerpt_sha256": "b2859ba942fa7a80781ebedf8c38ab69930224aeda7bfeb3cdf6e9e442a11297",
+      "depends_on": [
+        "Equiv",
+        "Continuous"
+      ]
+    },
+    {
+      "name": "Equiv",
+      "file": "definition-evidence/mathlib/Mathlib/Logic/Equiv/Defs.lean.txt",
+      "start_line": 67,
+      "end_line": 77,
+      "excerpt_sha256": "ebec84f39184615d8cef4d3df583bf9e0169ed3ac858bb811b465767c05e6c4b",
+      "depends_on": [
+        "Function.LeftInverse",
+        "Function.RightInverse"
+      ]
+    },
+    {
+      "name": "ExistsUnique",
+      "file": "definition-evidence/mathlib/Mathlib/Basic/ExistsUnique.lean.txt",
+      "start_line": 22,
+      "end_line": 22,
+      "excerpt_sha256": "3b721749c4c791095c20a64c2811609e6785e4fcb0e47c5f4339735b54f95c5b",
+      "depends_on": []
+    },
+    {
+      "name": "Pairwise",
+      "file": "definition-evidence/mathlib/Mathlib/Logic/Pairwise.lean.txt",
+      "start_line": 34,
+      "end_line": 35,
+      "excerpt_sha256": "641195c5023d73c7e0c1d9ad753b8fb5f54dd67fb836ba65631b5495be66b4a1",
+      "depends_on": []
+    },
+    {
+      "name": "Set.Subsingleton",
+      "file": "definition-evidence/mathlib/Mathlib/Data/Set/Subsingleton.lean.txt",
+      "start_line": 36,
+      "end_line": 37,
+      "excerpt_sha256": "a225c48fde2e5a19b128cb886641d0caf6e9c9814577f624434e77e45dcccde7",
+      "depends_on": []
+    },
+    {
+      "name": "Set",
+      "file": "definition-evidence/mathlib/Mathlib/Data/Set/Defs.lean.txt",
+      "start_line": 51,
+      "end_line": 51,
+      "excerpt_sha256": "e7befac567adce9bf5f483c3f464027738c0a6b2145a3b195d2c2dce10337d55",
+      "depends_on": []
+    },
+    {
+      "name": "Set.Subset",
+      "file": "definition-evidence/mathlib/Mathlib/Data/Set/Defs.lean.txt",
+      "start_line": 89,
+      "end_line": 90,
+      "excerpt_sha256": "1f6937c3dd0859b00012cd1754f598cf55e0117e6176cd74f5d987ff0ef2c52c",
+      "depends_on": [
+        "Set"
+      ]
+    },
+    {
+      "name": "Set.Nonempty",
+      "file": "definition-evidence/mathlib/Mathlib/Data/Set/Defs.lean.txt",
+      "start_line": 280,
+      "end_line": 281,
+      "excerpt_sha256": "95945a287ee6aea306886d19a7e56bb71a99f3f1a457b2fddc355dfba3e2f1e1",
+      "depends_on": [
+        "Set"
+      ]
+    },
+    {
+      "name": "Set.singleton",
+      "file": "definition-evidence/mathlib/Mathlib/Data/Set/Defs.lean.txt",
+      "start_line": 228,
+      "end_line": 228,
+      "excerpt_sha256": "4566257cb0ff776bffc701b88eb20ecf87baba3e878f75a4e80ed0ebe62959c7",
+      "depends_on": [
+        "Set"
+      ]
+    },
+    {
+      "name": "Set.univ",
+      "file": "definition-evidence/mathlib/Mathlib/Data/Set/Defs.lean.txt",
+      "start_line": 215,
+      "end_line": 215,
+      "excerpt_sha256": "53e385f32a2bcc80e787f3268725029934a51499fa151c59eee54a46cefd6a28",
+      "depends_on": [
+        "Set"
+      ]
+    },
+    {
+      "name": "Set.union",
+      "file": "definition-evidence/mathlib/Mathlib/Data/Set/Defs.lean.txt",
+      "start_line": 235,
+      "end_line": 235,
+      "excerpt_sha256": "b92f0b72d5c497577c11cd8f4700d9e5c122c0f25428c974b20991ab70ef704f",
+      "depends_on": [
+        "Set"
+      ]
+    },
+    {
+      "name": "Set.inter",
+      "file": "definition-evidence/mathlib/Mathlib/Data/Set/Defs.lean.txt",
+      "start_line": 242,
+      "end_line": 242,
+      "excerpt_sha256": "590383ce3c2ee5b7ddf5bfe8e6f58756b4748b6ab8d5f4ddbe7746f803fda9b7",
+      "depends_on": [
+        "Set"
+      ]
+    },
+    {
+      "name": "Set.compl",
+      "file": "definition-evidence/mathlib/Mathlib/Data/Set/Defs.lean.txt",
+      "start_line": 249,
+      "end_line": 249,
+      "excerpt_sha256": "c531aafb343ed805b63bfc21e3f87afdf89e8969a788cfcd033da580b9a60d93",
+      "depends_on": [
+        "Set"
+      ]
+    },
+    {
+      "name": "Set.image",
+      "file": "definition-evidence/mathlib/Mathlib/Data/Set/Defs.lean.txt",
+      "start_line": 266,
+      "end_line": 266,
+      "excerpt_sha256": "33bdb2da05833cc25b82686d5f94a98b24778577e5407ac386d980dd33e609a4",
+      "depends_on": [
+        "Set"
+      ]
+    },
+    {
+      "name": "Set.preimage",
+      "file": "definition-evidence/mathlib/Mathlib/Data/Set/Operations.lean.txt",
+      "start_line": 135,
+      "end_line": 135,
+      "excerpt_sha256": "bdbb3311188d718892907fb87ac66f86bfb45fc4cbcefeb9b80864b388966258",
+      "depends_on": [
+        "Set"
+      ]
+    },
+    {
+      "name": "Set.sUnion",
+      "file": "definition-evidence/mathlib/Mathlib/Order/SetNotation.lean.txt",
+      "start_line": 150,
+      "end_line": 151,
+      "excerpt_sha256": "bd9edee5aa19f56899d55309f8a47ae070804a26f8505440ca1c8fc731b664e0",
+      "depends_on": [
+        "Set"
+      ]
+    },
+    {
+      "name": "Disjoint",
+      "file": "definition-evidence/mathlib/Mathlib/Order/Disjoint.lean.txt",
+      "start_line": 48,
+      "end_line": 49,
+      "excerpt_sha256": "0afa2cf8eba8be7e8c79707dafde25b73970201e3d74bd9888afabf992c96ba2",
+      "depends_on": []
+    },
+    {
+      "name": "Set.disjoint_left",
+      "file": "definition-evidence/mathlib/Mathlib/Data/Set/Disjoint.lean.txt",
+      "start_line": 39,
+      "end_line": 40,
+      "excerpt_sha256": "75e398cfd3b31b4db087d5f895d772e7b5c55eb69c6b0b8d11df8be623fd4393",
+      "depends_on": [
+        "Disjoint"
+      ]
+    },
+    {
+      "name": "subtype topology",
+      "file": "definition-evidence/mathlib/Mathlib/Topology/Defs/Induced.lean.txt",
+      "start_line": 76,
+      "end_line": 78,
+      "excerpt_sha256": "8bd24be4718ccace8cdaeccd59ff803b4182398fc8155d587b444ffe2c5b7b4b",
+      "depends_on": [
+        "TopologicalSpace.induced"
+      ]
+    },
+    {
+      "name": "TopologicalSpace.induced",
+      "file": "definition-evidence/mathlib/Mathlib/Topology/Defs/Induced.lean.txt",
+      "start_line": 64,
+      "end_line": 74,
+      "excerpt_sha256": "0e4c8fb432d7ccded0027d7733eb1d8e0f14079326451254556201fbf81e21c4",
+      "depends_on": [
+        "IsOpen",
+        "Set.preimage"
+      ]
+    },
+    {
+      "name": "TopologicalSpace.coinduced",
+      "file": "definition-evidence/mathlib/Mathlib/Topology/Defs/Induced.lean.txt",
+      "start_line": 85,
+      "end_line": 89,
+      "excerpt_sha256": "451d30f5453748f23e633b7627968272d41895b07585311c8c0b132c35dc210e",
+      "depends_on": [
+        "IsOpen",
+        "Set.preimage"
+      ]
+    },
+    {
+      "name": "quotient topology",
+      "file": "definition-evidence/mathlib/Mathlib/Topology/Constructions.lean.txt",
+      "start_line": 58,
+      "end_line": 60,
+      "excerpt_sha256": "a5cee6cfb14ea92be33362ba6a946ff92641b3876b85f6e91e68673ed9828dd0",
+      "depends_on": [
+        "Quotient",
+        "TopologicalSpace.coinduced"
+      ]
+    },
+    {
+      "name": "Filter",
+      "file": "definition-evidence/mathlib/Mathlib/Order/Filter/Defs.lean.txt",
+      "start_line": 75,
+      "end_line": 83,
+      "excerpt_sha256": "8b21dcd464fbc371cb59285737295ebd696d1cffd08c2bc1415c4436740ea128",
+      "depends_on": [
+        "Set"
+      ]
+    },
+    {
+      "name": "Filter.principal",
+      "file": "definition-evidence/mathlib/Mathlib/Order/Filter/Defs.lean.txt",
+      "start_line": 148,
+      "end_line": 152,
+      "excerpt_sha256": "7fad25f589631194699e88f9cac1b64cb915f8805b67b9bd66c7fdbbb87d19de",
+      "depends_on": [
+        "Filter",
+        "Set.Subset"
+      ]
+    },
+    {
+      "name": "Filter.order",
+      "file": "definition-evidence/mathlib/Mathlib/Order/Filter/Defs.lean.txt",
+      "start_line": 182,
+      "end_line": 186,
+      "excerpt_sha256": "938f68b188f2cb0cf9d59a019c62fa0a2ce08913c01c61bdafa39cd417a37605",
+      "depends_on": [
+        "Filter"
+      ]
+    },
+    {
+      "name": "Filter.NeBot",
+      "file": "definition-evidence/mathlib/Mathlib/Order/Filter/Defs.lean.txt",
+      "start_line": 271,
+      "end_line": 273,
+      "excerpt_sha256": "172c208f3bcdd656bef5efb2fd266377c7ca326f1b8293abbc3c8dbf1a26f2c7",
+      "depends_on": [
+        "Filter.bot"
+      ]
+    },
+    {
+      "name": "Filter.bot",
+      "file": "definition-evidence/mathlib/Mathlib/Order/Filter/Defs.lean.txt",
+      "start_line": 218,
+      "end_line": 219,
+      "excerpt_sha256": "79c13d77ed59944df157d464e7edfdbfb4e6d2a07509528f5edb130af907cf51",
+      "depends_on": [
+        "Filter"
+      ]
+    },
+    {
+      "name": "Filter.inf",
+      "file": "definition-evidence/mathlib/Mathlib/Order/Filter/Defs.lean.txt",
+      "start_line": 227,
+      "end_line": 239,
+      "excerpt_sha256": "03970377e205e56b72289690cec2b16ae632aab252428c017163e7989c5b2b1f",
+      "depends_on": [
+        "Filter",
+        "Set.inter"
+      ]
+    },
+    {
+      "name": "Filter.sInf",
+      "file": "definition-evidence/mathlib/Mathlib/Order/Filter/Defs.lean.txt",
+      "start_line": 200,
+      "end_line": 200,
+      "excerpt_sha256": "26e0c1381b3abd89e890c953fa87547cde90f2c6c9676172b45c41299a1238f9",
+      "depends_on": [
+        "Filter"
+      ]
+    },
+    {
+      "name": "Function.Surjective",
+      "file": "definition-evidence/lean/src/Init/Data/Function.lean.txt",
+      "start_line": 62,
+      "end_line": 63,
+      "excerpt_sha256": "17623335cc7433553f84064e76a183bcf00b3da834866b4fa356f3f28d15307c",
+      "depends_on": []
+    },
+    {
+      "name": "Function.LeftInverse",
+      "file": "definition-evidence/lean/src/Init/Data/Function.lean.txt",
+      "start_line": 73,
+      "end_line": 74,
+      "excerpt_sha256": "618f21564d83661dc333cfe2e8158631959ef79d7896bfcc042896d4cb173c17",
+      "depends_on": []
+    },
+    {
+      "name": "Function.RightInverse",
+      "file": "definition-evidence/lean/src/Init/Data/Function.lean.txt",
+      "start_line": 83,
+      "end_line": 84,
+      "excerpt_sha256": "043e1f4d94056ee4b4ef07322487696c4b5aa54e91d89fa83d48003672859b42",
+      "depends_on": [
+        "Function.LeftInverse"
+      ]
+    },
+    {
+      "name": "Setoid",
+      "file": "definition-evidence/lean/src/Init/Core.lean.txt",
+      "start_line": 1573,
+      "end_line": 1577,
+      "excerpt_sha256": "344ad061bd54b6648b1fe6ea13f80347e1633367994f648fe49578db27bd6c6d",
+      "depends_on": []
+    },
+    {
+      "name": "Quotient",
+      "file": "definition-evidence/lean/src/Init/Core.lean.txt",
+      "start_line": 1937,
+      "end_line": 1938,
+      "excerpt_sha256": "6630b85af6ea8c335e8e8447e023eaced149745a6b78f29dda5023d3213c51ef",
+      "depends_on": [
+        "Setoid"
+      ]
+    }
+  ],
+  "literal_excerpts": [
+    "IsPreconnected",
+    "IsConnected",
+    "connectedComponent",
+    "connectedComponentIn",
+    "IsTotallyDisconnected",
+    "Set.Subsingleton",
+    "CompactSpace",
+    "IsCompact",
+    "isCompact_iff_finite_subcover",
+    "T2Space",
+    "Continuous",
+    "IsClosed",
+    "Homeomorph",
+    "Equiv",
+    "Function.Surjective",
+    "ExistsUnique"
+  ]
+}

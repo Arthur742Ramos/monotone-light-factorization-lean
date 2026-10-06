@@ -1,19 +1,18 @@
-# Independent review
+# Review and publication scope
 
-Independent AI review approved all three selected MonotoneLight theorems, the exposed FiberRel definition, the supporting proof source and the reviewed 16-file public archive. The review found no mathematical or local Lean blocker. It checked the primary source, the component quotient, proved Hausdorffness, total disconnectedness of the induced fibers and uniqueness among all qualifying factorizations. Empty spaces remain permitted.
+Independent AI review approved all three selected MonotoneLight theorems, the exposed FiberRel definition, the supporting proof source and the original 16-file public archive. It checked the primary source, the component quotient, proved Hausdorffness, total disconnectedness of the induced fibers, uniqueness among all qualifying factorizations and empty spaces. The approved Solution and Challenge bytes remain unchanged.
 
-The reviewer independently repeated strict compilation, isolated Challenge compilation, exact theorem types and universes, predicate type and value, a literal predicate check, transitive axiom checks, and empty-space instantiations of both existence and uniqueness. Metadata, dependency byte provenance, the duplicate assessment and the public archive also passed review. The independent proof-check stage completed in 141.09 seconds within one CPU and 3 GiB, with unchanged source hashes and no remaining owned processes.
+For submitted commit `7f1c963eb21d2138cc5a52fff634d78ef328032e`, the parent reports that hosted mechanical verification passed. The subsequent editorial audit requested inspectable pinned definitions of the material imported topology predicates. [DEFINITIONS.md](DEFINITIONS.md), the complete source dossier and its index address that request. All 23 copied source files match exact upstream Git blobs. The source-integrity checker, installed Mathlib source comparisons, negative controls and 15 literal Lean audit examples passed locally.
 
-The approved Solution and Challenge bytes are unchanged. Review-status prose and metadata were subsequently refreshed and revalidated locally, and the final archives passed new integrity and privacy checks. The changed prose, metadata and final archive bytes have not received a second independent review. The private evidence contains the original approval and receipts.
+This repaired package has not yet received independent review or hosted CI at its final commit. No registry resubmission was made by this repair task. The parent owns review, publication and any later submission. Copied build artifacts retain their prior qualification limits; source byte identity and literal checks do not establish a clean dependency rebuild. Human mathematical review remains unrun.
 
-An ordinary Lake build, CI execution, hosted Comparator, NanoDa and con-ron independent kernel replay, a fresh clean dependency rebuild, human mathematical review and registry review remain unrun. Cached dependency byte checks retain their inherited revision and cleanliness qualification limits.
-
-Only the following files are eligible for publication:
+Only the following 44 files are eligible for publication. The dependency source copies are intentionally included as readable audit evidence:
 
 ```text
 .github/workflows/lean.yml
 .gitignore
 Challenge.lean
+DEFINITIONS.md
 LICENSE
 PROVENANCE.md
 README.md
@@ -21,12 +20,39 @@ REVIEW.md
 Solution.lean
 VERIFICATION.md
 comparator.json
+definition-evidence/README.md
+definition-evidence/lean/LICENSE.txt
+definition-evidence/lean/src/Init/Core.lean.txt
+definition-evidence/lean/src/Init/Data/Function.lean.txt
+definition-evidence/manifest.json
+definition-evidence/mathlib/LICENSE.txt
+definition-evidence/mathlib/Mathlib/Basic/ExistsUnique.lean.txt
+definition-evidence/mathlib/Mathlib/Data/Set/Defs.lean.txt
+definition-evidence/mathlib/Mathlib/Data/Set/Disjoint.lean.txt
+definition-evidence/mathlib/Mathlib/Data/Set/Operations.lean.txt
+definition-evidence/mathlib/Mathlib/Data/Set/Subsingleton.lean.txt
+definition-evidence/mathlib/Mathlib/Logic/Equiv/Defs.lean.txt
+definition-evidence/mathlib/Mathlib/Logic/Pairwise.lean.txt
+definition-evidence/mathlib/Mathlib/Order/Disjoint.lean.txt
+definition-evidence/mathlib/Mathlib/Order/Filter/Defs.lean.txt
+definition-evidence/mathlib/Mathlib/Order/SetNotation.lean.txt
+definition-evidence/mathlib/Mathlib/Topology/Compactness/Compact.lean.txt
+definition-evidence/mathlib/Mathlib/Topology/Connected/Basic.lean.txt
+definition-evidence/mathlib/Mathlib/Topology/Connected/TotallyDisconnected.lean.txt
+definition-evidence/mathlib/Mathlib/Topology/Constructions.lean.txt
+definition-evidence/mathlib/Mathlib/Topology/Defs/Basic.lean.txt
+definition-evidence/mathlib/Mathlib/Topology/Defs/Filter.lean.txt
+definition-evidence/mathlib/Mathlib/Topology/Defs/Induced.lean.txt
+definition-evidence/mathlib/Mathlib/Topology/Homeomorph/Defs.lean.txt
+definition-evidence/mathlib/Mathlib/Topology/Separation/Hausdorff.lean.txt
 formalization.yaml
 lake-manifest.json
 lakefile.toml
 lean-toolchain
 scripts/CompareTypes.lean
+scripts/DefinitionAudit.lean
+scripts/check_definitions.py
 scripts/verify.py
 ```
 
-The review bundle's private evidence, dependency caches, local scripts, diagnostic logs, environment details and intermediate artifacts are excluded from that whitelist. Publication and any registry submission belong to the parent task after independent review.
+The review bundle's private evidence, dependency caches, local scripts, diagnostic logs, environment details and intermediate artifacts are excluded from this whitelist. The full mathematical reference PDF is excluded. Publish only the public source archive, after the parent completes independent review and exact final CI.

@@ -19,6 +19,8 @@ jobs:
           set-safe-directory: false
       - name: Check package headers, sizes, and pins
         run: python3 scripts/verify.py --check-package-only
+      - name: Check pinned definition evidence
+        run: python3 scripts/check_definitions.py --self-test
       - name: Install the pinned Lean toolchain
         uses: leanprover/lean-action@f061402b660e0c34644504b324e830f2991d4865 # v1
         with:
@@ -28,3 +30,7 @@ jobs:
           use-mathlib-cache: "false"
       - name: Build and verify
         run: python3 scripts/verify.py --lake-build --output .lake/verification.json
+      - name: Compare definition sources and literal meanings
+        run: |
+          python3 scripts/check_definitions.py --compare-mathlib
+          lake env lean -j1 -M3072 -DwarningAsError=true scripts/DefinitionAudit.lean
